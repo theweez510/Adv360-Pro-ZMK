@@ -58,6 +58,20 @@
             bindings = <&kp N3 &kp COMMA &kp SPACE &kp N1 &kp N0 &kp COMMA &kp SPACE &kp N2 &kp N0>;
             label = "LUBE";
         };
+
+        parc: parc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp I &kp L &kp DOT &kp P &kp I &kp DOT &kp M &kp N2 &kp COLON>;
+            label = "PARC";
+        };
+
+        tavg: tavg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp A &kp V &kp G &kp EQUAL &kp N1 &kp N5 &kp M>;
+            label = "TAVG";
+        };
     };
 
     keymap {
@@ -67,8 +81,8 @@
             display-name = "Base";
             bindings = <
 &kp EQUAL  &kp N1          &kp N2          &kp N3            &kp N4              &kp N5  &tog 1                                                                 &mo 3        &kp N6  &kp N7               &kp N8             &kp N9           &kp N0              &kp MINUS
-&kp TAB    &kp Q           &kp W           &kp E             &kp R               &kp T   &login                                                                 &none        &kp Y   &kp U                &kp I              &kp O            &kp P               &kp BSLH
-&mkp LCLK  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &kp G   &mkp LCLK  &kp SPACE       &kp DELETE           &kp LGUI   &kp ESCAPE  &none        &kp H   &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
+&kp TAB    &kp Q           &kp W           &kp E             &kp R               &kp T   &login                                                                 &parc        &kp Y   &kp U                &kp I              &kp O            &kp P               &kp BSLH
+&mkp LCLK  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &kp G   &mkp LCLK  &kp SPACE       &kp DELETE           &kp LGUI   &kp ESCAPE  &tavg        &kp H   &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
 &kp LSHFT  &kp Z           &kp X           &kp C             &kp V               &kp B                              &kp PRINTSCREEN      &kp PG_UP                           &kp N   &kp M                &kp COMMA          &kp DOT          &kp FSLH            &kp RSHFT
 &mo 2      &kp GRAVE       &caps_word      &kp LEFT          &kp RIGHT                   &kp BSPC   &kp LEFT_SHIFT  &kp TAB              &kp PG_DN  &kp ENTER   &lt 2 SPACE          &kp UP               &kp DOWN           &kp LBKT         &kp RBKT            &mo 2
             >;
