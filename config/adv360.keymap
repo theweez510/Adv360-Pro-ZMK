@@ -57,6 +57,90 @@
             bindings = <&kp T &kp A &kp V &kp G &kp EQUAL &kp N1 &kp N5 &kp M>;
             label = "TAVG";
         };
+
+        TS: TS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp LS(S)>;
+            label = "TS";
+        };
+
+        DS: DS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp LS(S)>;
+            label = "DS";
+        };
+
+        Press1: Press1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp S &kp T &kp SPACE &kp LS(P) &kp R &kp E &kp S &kp S &kp SPACE>;
+            label = "PRESS1";
+        };
+
+        Press2: Press2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N &kp D &kp SPACE &kp LS(P) &kp R &kp E &kp S &kp S &kp SPACE>;
+            label = "PRESS2";
+        };
+
+        lumpbreaker: lumpbreaker {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(L) &kp U &kp M &kp P &kp SPACE &kp LS(B) &kp R &kp E &kp A &kp K &kp E &kp R &kp SPACE>;
+            label = "LUMPBREAKER";
+        };
+
+        steamin: steamin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp T &kp E &kp A &kp M &kp SPACE &kp LS(B) &kp O &kp X &kp SPACE &kp LS(I) &kp N &kp SPACE>;
+            label = "STEAMIN";
+        };
+
+        steamout: steamout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp T &kp E &kp A &kp M &kp SPACE &kp LS(B) &kp O &kp X &kp SPACE &kp LS(O) &kp U &kp T &kp SPACE>;
+            label = "STEAMOUT";
+        };
+
+        headbox: headbox {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp E &kp A &kp D &kp SPACE &kp LS(B) &kp O &kp X &kp SPACE>;
+            label = "HEADBOX";
+        };
+
+        dryer1: dryer1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp R &kp Y &kp E &kp R &kp SPACE &kp LS(C) &kp A &kp N &kp SPACE &kp POUND &kp N1 &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE &kp LS(T) &kp LS(S)>;
+            label = "DRYER1";
+        };
+
+        dryer7: dryer7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp R &kp Y &kp E &kp R &kp SPACE &kp LS(C) &kp A &kp N &kp SPACE &kp POUND &kp N7 &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE &kp LS(T) &kp LS(S)>;
+            label = "DRYER7";
+        };
+
+        dryer19: dryer19 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp R &kp Y &kp E &kp R &kp SPACE &kp LS(C) &kp A &kp N &kp SPACE &kp POUND &kp N1 &kp N9 &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE &kp LS(T) &kp LS(S)>;
+            label = "DRYER19";
+        };
+
+        dryer35: dryer35 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp R &kp Y &kp E &kp R &kp SPACE &kp LS(C) &kp A &kp N &kp SPACE &kp POUND &kp N3 &kp N5 &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE &kp LS(D) &kp LS(S)>;
+            label = "DRYER35";
+        };
     };
 
     behaviors {
@@ -89,11 +173,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1          &kp N2          &kp N3            &kp N4              &kp N5  &tog 1                                                                         &mo 3        &kp N6  &kp N7               &kp N8             &kp N9           &kp N0              &kp MINUS
-&kp TAB    &kp Q           &kp W           &kp E             &kp R               &kp T   &login                                                                         &parc        &kp Y   &kp U                &kp I              &kp O            &kp P               &kp BSLH
-&mkp LCLK  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &kp G   &none     &mkp LCLK       &kp DELETE                    &kp LGUI   &kp ESCAPE  &tavg        &kp H   &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT  &kp Z           &kp X           &kp C             &kp V               &kp B                             &holdlogin 0 PRINTSCREEN      &kp PG_UP                           &kp N   &kp M                &kp COMMA          &kp DOT          &kp FSLH            &kp RSHFT
-&mo 2      &kp GRAVE       &caps_word      &kp LEFT          &kp RIGHT                   &kp BSPC  &kp LEFT_SHIFT  &kp TAB                       &kp PG_DN  &kp ENTER   &lt 2 SPACE          &kp UP               &kp DOWN           &kp LBKT         &kp RBKT            &mo 2
+&kp EQUAL  &kp N1          &kp N2          &kp N3            &kp N4              &kp N5       &tog 1                                                                                   &mo 3        &kp N6  &kp N7               &kp N8             &kp N9           &kp N0              &kp MINUS
+&kp TAB    &kp Q           &kp W           &kp E             &kp R               &kp T        &login                                                                                   &parc        &kp Y   &kp U                &kp I              &kp O            &kp P               &kp BSLH
+&mkp LCLK  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &hm SPACE G  &none     &mkp LCLK             &kp DELETE                    &kp RIGHT_GUI  &kp ESCAPE  &tavg        &kp H   &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT  &kp Z           &kp X           &kp C             &kp V               &kp B                                        &holdlogin 0 PRINTSCREEN      &kp PG_UP                               &kp N   &kp M                &kp COMMA          &kp DOT          &kp FSLH            &kp RSHFT
+&mo 2      &kp GRAVE       &caps_word      &kp LEFT          &kp RIGHT                        &kp BSPC  &hm LEFT_SHIFT SPACE  &kp TAB                       &kp PG_DN      &kp ENTER   &lt 2 SPACE          &kp UP               &kp DOWN           &kp LBKT         &kp RBKT            &mo 2
             >;
         };
 
@@ -127,6 +211,16 @@
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        Flir {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
