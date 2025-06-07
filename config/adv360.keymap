@@ -230,7 +230,7 @@
             bindings = <
 &kp EQUAL    &kp PERCENT     &kp KP_N7        &kp KP_N8     &kp KP_NUMBER_9  &kp KP_MULTIPLY  &trans                                                                  &mo 3      &kp PERCENT      &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB      &kp AMPERSAND   &kp KP_NUMBER_4  &kp KP_N5     &kp KP_N6        &kp KP_MINUS     &kp LA(ENTER)                                                           &none      &kp EXCLAMATION  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp EXCL
-&kp AT_SIGN  &kp DOLLAR      &kp KP_N1        &kp KP_N2     &kp KP_N3        &kp KP_PLUS      &kp F3         &kp SPACE     &kp UP_ARROW        &kp LGUI   &kp ESCAPE  &none      &kp DOLLAR       &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp DOLLAR
+&kp AT_SIGN  &kp DOLLAR      &kp KP_N1        &kp KP_N2     &kp KP_N3        &kp KP_PLUS      &hm KP_NUM F3  &kp SPACE     &kp UP_ARROW        &kp LGUI   &kp ESCAPE  &none      &kp DOLLAR       &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp DOLLAR
 &kp LSHFT    &kp COLON       &kp KP_N0        &kp KP_COMMA  &kp KP_DOT       &kp KP_SLASH                                  &kp DOWN_ARROW      &kp PG_UP                         &kp AT_SIGN      &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp AT
 &mo 2        &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW  &kp DOWN                          &kp BSPC       &kp KP_ENTER  &kp TAB             &kp PG_DN  &kp ENTER   &kp KP_N0                   &kp UP      &kp DOWN      &kp KP_DOT     &kp KP_COMMA     &mo 2
             >;
