@@ -217,22 +217,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1          &kp N2          &kp N3                  &kp N4                      &kp N5  &tog 1                                                                                            &tog 4       &kp N6  &kp N7                      &kp N8                  &kp N9           &kp N0              &kp MINUS
-&kp TAB    &kp Q           &kp W           &kp E                   &kp R                       &kp T   &holdtavg 0 F12                                                                                   &mo 3        &kp Y   &kp U                       &kp I                   &kp O            &kp P               &kp BSLH
-&mkp LCLK  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D        &hm LEFT_CONTROL F          &kp G   &holdparc 0 F3   &msscrl SCRL_UP RCLK    &kp DELETE                    &kp RIGHT_GUI  &kp ESCAPE  &kp EQUAL    &kp H   &hm RIGHT_CONTROL J         &hm RIGHT_SHIFT K       &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT  &kp Z           &kp X           &kp C                   &kp V                       &kp B                                            &holdlogin 0 PRINTSCREEN      &mkp MB4                                &kp N   &kp M                       &kp COMMA               &kp DOT          &kp FSLH            &kp RSHFT
-&mo 2      &kp GRAVE       &caps_word      &msmv MOVE_UP UP_ARROW  &msmv MOVE_DOWN DOWN_ARROW          &kp BACKSPACE    &msscrl SCRL_DOWN LCLK  &mskp MB5 TAB                 &mkp MB5       &kp ENTER   &lt 1 SPACE          &msmv MOVE_LEFT LEFT_ARROW  &msmv MOVE_RIGHT RIGHT  &kp LBKT         &kp RBKT            &mo 2
+&kp EQUAL              &kp N1          &kp N2          &kp N3                  &kp N4                      &kp N5  &tog 1                                                                                               &tog 4       &kp N6  &kp N7                      &kp N8                  &kp N9           &kp N0              &kp MINUS
+&kp LEFT_PARENTHESIS   &kp Q           &kp W           &kp E                   &kp R                       &kp T   &holdtavg 0 F12                                                                                      &mo 3        &kp Y   &kp U                       &kp I                   &kp O            &kp P               &kp BSLH
+&kp RIGHT_PARENTHESIS  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D        &hm LEFT_CONTROL F          &kp G   &holdparc 0 F3   &msscrl SCRL_UP RCLK    &kp DELETE                    &hm RIGHT_GUI F4  &kp ESCAPE  &kp EQUAL    &kp H   &hm RIGHT_CONTROL J         &hm RIGHT_SHIFT K       &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT              &kp Z           &kp X           &kp C                   &kp V                       &kp B                                            &holdlogin 0 PRINTSCREEN      &mkp MB4                                   &kp N   &kp M                       &kp COMMA               &kp DOT          &kp FSLH            &kp RSHFT
+&mo 2                  &kp GRAVE       &caps_word      &msmv MOVE_UP UP_ARROW  &msmv MOVE_DOWN DOWN_ARROW          &kp BACKSPACE    &msscrl SCRL_DOWN LCLK  &mskp MB5 TAB                 &mkp MB5          &kp ENTER   &lt 1 SPACE          &msmv MOVE_LEFT LEFT_ARROW  &msmv MOVE_RIGHT RIGHT  &kp LBKT         &kp RBKT            &mo 2
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL    &kp PERCENT     &kp KP_N7        &kp KP_N8     &kp KP_NUMBER_9  &kp KP_MULTIPLY  &trans                                                                  &mo 3      &kp PERCENT      &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB      &kp AMPERSAND   &kp KP_NUMBER_4  &kp KP_N5     &kp KP_N6        &kp KP_MINUS     &kp LA(ENTER)                                                           &none      &kp EXCLAMATION  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp EXCL
-&kp AT_SIGN  &kp DOLLAR      &kp KP_N1        &kp KP_N2     &kp KP_N3        &kp KP_PLUS      &hm KP_NUM F3  &kp SPACE     &kp UP_ARROW        &kp LGUI   &kp ESCAPE  &none      &kp DOLLAR       &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp DOLLAR
-&kp LSHFT    &kp COLON       &kp KP_N0        &kp KP_COMMA  &kp KP_DOT       &kp KP_SLASH                                  &kp DOWN_ARROW      &kp PG_UP                         &kp AT_SIGN      &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp AT
-&mo 2        &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW  &kp DOWN                          &kp BSPC       &kp KP_ENTER  &kp TAB             &kp PG_DN  &kp ENTER   &kp KP_N0                   &kp UP      &kp DOWN      &kp KP_DOT     &kp KP_COMMA     &mo 2
+&kp EQUAL       &kp PERCENT     &kp KP_N7        &kp KP_N8     &kp KP_NUMBER_9  &kp KP_MULTIPLY  &trans                                                                  &mo 3      &kp PERCENT      &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB         &kp AMPERSAND   &kp KP_NUMBER_4  &kp KP_N5     &kp KP_N6        &kp KP_MINUS     &kp LA(ENTER)                                                           &none      &kp EXCLAMATION  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp EXCL
+&kp AT_SIGN     &kp DOLLAR      &kp KP_N1        &kp KP_N2     &kp KP_N3        &kp KP_PLUS      &kp F4         &kp SPACE     &kp UP_ARROW        &kp LGUI   &kp ESCAPE  &none      &kp DOLLAR       &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp DOLLAR
+&kp ESC         &kp COLON       &kp KP_N0        &kp KP_COMMA  &kp KP_DOT       &kp KP_SLASH                                  &kp DOWN_ARROW      &kp PG_UP                         &kp AT_SIGN      &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp AT
+&kp KP_NUMLOCK  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW  &kp DOWN                          &kp BSPC       &kp KP_ENTER  &kp TAB             &kp PG_DN  &kp ENTER   &kp KP_N0                   &kp UP      &kp DOWN      &kp KP_DOT     &kp KP_COMMA     &mo 2
             >;
         };
 
